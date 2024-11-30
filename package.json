@@ -1,0 +1,26 @@
+{
+  "name": "xalora-lab",
+  "version": "1.0.0",
+  "description": "the main landing page of xalora lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samir717le/zalora-web.git"
+  },
+  "author": "samir717le",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samir717le/zalora-lab/issues"
+  },
+  "homepage": "https://github.com/samir717le/zalora-lab#readme",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "nodemailer": "^6.9.16",
+    "nodemon": "^3.1.7"
+  }
+}

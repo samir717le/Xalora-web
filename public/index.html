@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XALORA LAB</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><img src="img/Xalorawhite.png" alt="Xalorawhite" height="72.2px"></div>
+    <div class="menu-toggle" id="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav class="nav" id="nav">
+      <ul class="nav-list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="hero" data-aos="fade-right">
+    <h1>Welcome <br>to</h1>
+    <p>where innovation meets passion!</p>
+    <div>
+      <a href="https://discord.gg/wfUp7GnS8E"><i class="fa-brands fa-discord"></i></a>
+      <a href="https://github.com/xaloralabs/?from=xalora-website">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </section>
+  <section id="about" data-aos="fade-right">
+    <h1>ABOUT US</h1>
+    <p>Welcome to Xalora Labs! WE are passionate and innovative coding team dedicated to creating cutting-edge solutions that enchance the digital experiance for users around the globe. Our mission is to push the boundaries of technology while delivering high-quality products that meet  the needs of our community.</p>
+    <p>At Xalora Labs,we belive in the power of collaboration and creativity. Our team is composed of skilled developers, designers and tech ethusiasts who come together to turn ideas into reality. We are committed to continucus learning and improvement, ensuring that our projects are not oly functional but also user-friendly amd visully appealing.</p>
+  </section>
+  <section id="project" data-aos="fade-left">
+    <h1>Projects</h1>
+    <div data-aos="fade-right">
+      <h2>Xalora Dash:</h2>
+      <p>dive into the world of streamlined managment with Xalora Dash, our custom pterodactyl Dashboard. Designed for ease of use and effeciency, XaloraDash empowers server administrators with a powerful tool to manage their gaming servers seamlessly. Wherher you're seasoned pro or just starting. XaloraDash simplifies the complexities of server management, allowing you to focus on what truly matters - your gameplay.</p>
+      <a href="https://github.com/xaloralabs/xaloraclient" class="btn">Let's Go</a>
+    </div>
+    <div data-aos="fade-left">
+      <h2>Xalora PVP Client:</h2>
+      <p>For all the minecraft enthusiasts out there, we are proudly present the Zalora PVP client. tailored  specifically for competitive players, this enchance your gaming experiance with optimized perfomance, improved visuals, and unique futures desinged to give you edge in  player-versus-player combat. Join the eanks of elite players and elevate your Minecraft adventure with Xalora!</p>
+      <a href="" class="btn disable">Comming Soon...</a>
+    </div>
+    <div data-aos="fade-right">
+      <p>As we continue to grow, we have more excting projects in the pipeline that we can't wait to share with you. Our comminment innovation drives us to explore new ides and technologies that will further enchance our offerings.</p>
+      <p>Thanks for begin a part of our journey. together, let's build a better digital future!</p>
+    </div>
+  </section>
+  <section id="contact" data-aos="fade-right">
+    <h1>CONTACT US</h1>
+    <p>Stay updated on our latest projects and development by following us on our social media channels and joining our community.We love hearing from you and welcome any feedback or suggestions you may have!</p>
+    <a href="https://discord.gg/wfUp7GnS8E"><i class="fa-brands fa-discord"></i></a>
+    <form action="/contactus" method="post" data-aos="zoom-in">
+      <label for="uname">USERNAME: *</label>
+      <input type="text" name="uname" placeholder="ENTER YOUR USERNAME(name) HERE.." required>
+      <label for="email">E-MAIL: *</label>
+      <input type="email" name="email" placeholder="ENTER YOUR E-MAIL HERE.." required>
+      <label for="body">MASSAGE: *</label>
+      <input type="text" name="body" placeholder="ENTER YOUR MASSAGE HERE.." required>
+      <input type="submit" value="SUBMIT">
+    </form>
+  </section>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav');
+
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('open');
+    nav.classList.toggle('show');
+  });
+});
+
+  </script>
+</body>
+</html>
+
